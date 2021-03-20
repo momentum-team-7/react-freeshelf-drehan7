@@ -1,16 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:wght@300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "Newsreader", monospace;
+}
+body {
+  margin-top: 1%;
+  margin-bottom: 2%;
 }
 
 .book-container {
-  border: 1px solid black;
+  min-height: 15rem;
+  padding: 1%;
   display: flex;
   justify-content: space-between;
-  height: 15rem;
+  height: fit-content;
 }
 
 .book-img img {
   width: 10rem;
   height: 14rem;
+}
+
+.book-title {
+  font-size: 40px;
+  margin: 1%;
+}
+
+.book-info p {
+  font-size: 25px;
+  margin: 1%;
+}
+
+.more-info-button {
+  border: none;
+  font-weight: bolder;
+  font-size: 17px;
+  margin-left: 2%;
+  text-decoration: none;
+  outline: none;
+}
+
+.more-book-info p {
+  font-size: 18px;
+  line-height: 1.1;
+}
+
+.more-book-info {
+  height: 0px;
+  overflow: hidden;
+  line-height: 1.1;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.more-book-info.show {
+  height: 17rem;
+  opacity: 1;
+  line-height: 1.1;
 }
