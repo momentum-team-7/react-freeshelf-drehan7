@@ -21,7 +21,7 @@ function Book(props) {
                 </div>
             </div>
             <div className="book-img">
-                <img src={props.book.coverImageUrl} onerror="this.src={'https://www.freeiconspng.com/uploads/no-image-icon-23.jpg'}"></img>
+                <img src={props.book.coverImageUrl} onerror="this.src='https://www.freeiconspng.com/uploads/no-image-icon-23.jpg'"></img>
             </div>
 
         </div>
