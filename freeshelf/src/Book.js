@@ -7,13 +7,13 @@ function Book(props) {
 
 
     return (
-        <div key={props.key} className="book-container">
+        <div key={props.key} className="book-container" role="container">
             <div className="book-info">
                 <h2 className="book-title">{props.book.title}</h2>
                 <p>{props.book.author}</p>
                 <p>{props.book.shortDescription}</p>
-                <button className="more-info-button" onClick={() => props.setisActive(props.isActive === props.book.author ? '' : props.book.author)}>{props.isActive === props.book.author ? 'Less Info' : 'More Info'}</button>
-                <div className={(props.isActive === props.book.author) ? 'more-book-info show' : 'more-book-info'}>
+                <button role='alert' className="more-info-button" onClick={() => props.setisActive(props.isActive === props.book.author ? '' : props.book.author)}>{props.isActive === props.book.author ? 'Less Info' : 'More Info'}</button>
+                <div role="list" className={(props.isActive === props.book.author) ? 'more-book-info show' : 'more-book-info'}>
                     <p>URL: <a target="_blank" href={props.book.url}>{props.book.url}</a></p>
                     <p>Publisher: {props.book.publisher}</p>
                     <p>Publication Date: {props.book.publicationDate}</p>
